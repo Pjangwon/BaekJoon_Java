@@ -9,18 +9,19 @@ public class Count {
     BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
     int N = Integer.parseInt(br.readLine());
-    String numLine = br.readLine();
-    String checkNum = br.readLine();
+    StringTokenizer st = new StringTokenizer(br.readLine());
+    int V = Integer.parseInt(br.readLine());
+
+    int[] numStore = new int[N];
     int count = 0;
 
-    String[] numStore = numLine.split(" ");
-
     for (int i = 0; i < N; i++) {
-      if (numStore[i].equals(checkNum)) {
+      numStore[i] = Integer.parseInt(st.nextToken());
+      if (numStore[i] == V) {
         count++;
       }
     }
-    bw.write((count) + "\n");
+    bw.write(count + "\n");
     bw.flush();
   }
 }
