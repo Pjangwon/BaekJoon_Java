@@ -1,7 +1,6 @@
-package BaekJoon;
+package BaekJoon.OldSolve;
 
 import java.io.*;
-import java.util.StringTokenizer;
 
 public class Fast_AB {
 

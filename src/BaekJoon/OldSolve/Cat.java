@@ -1,4 +1,4 @@
-package BaekJoon;
+package BaekJoon.OldSolve;
 
 public class Cat {
 

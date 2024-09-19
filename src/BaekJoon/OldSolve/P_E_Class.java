@@ -1,4 +1,4 @@
-package BaekJoon;
+package BaekJoon.OldSolve;
 
 import java.util.Scanner;
 
