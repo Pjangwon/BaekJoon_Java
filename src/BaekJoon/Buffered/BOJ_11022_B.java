@@ -3,22 +3,20 @@ package BaekJoon.Buffered;
 import java.io.*;
 import java.util.StringTokenizer;
 
-public class AB_5 {
+public class BOJ_11022_B {
   public static void main(String[] args) throws IOException {
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
-    while (true) {
+    int T = Integer.parseInt(br.readLine());
+
+    for (int i = 0; i < T; i++) {
       StringTokenizer st = new StringTokenizer(br.readLine());
       int A = Integer.parseInt(st.nextToken());
       int B = Integer.parseInt(st.nextToken());
-
-      if ((A+B) > 0){
-        bw.write((A + B) + "\n");
-      } else {
-        break;
-      }
+      bw.write("Case #" + (i + 1) + ": " + A + " + " + B + " = " + (A + B) + "\n");
     }
+
     bw.flush();
   }
 }

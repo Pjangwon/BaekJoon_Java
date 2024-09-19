@@ -3,18 +3,21 @@ package BaekJoon.Buffered;
 import java.io.*;
 import java.util.StringTokenizer;
 
-public class AB_4_Buf {
+public class BOJ_10952_B {
   public static void main(String[] args) throws IOException {
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
-    String s;
-    while ((s = br.readLine()) != null) {
-      StringTokenizer st = new StringTokenizer(s, " ");
-      int a = Integer.parseInt(st.nextToken());
-      int b = Integer.parseInt(st.nextToken());
+    while (true) {
+      StringTokenizer st = new StringTokenizer(br.readLine());
+      int A = Integer.parseInt(st.nextToken());
+      int B = Integer.parseInt(st.nextToken());
 
-      bw.write((a + b) + "\n");
+      if ((A+B) > 0){
+        bw.write((A + B) + "\n");
+      } else {
+        break;
+      }
     }
     bw.flush();
   }
