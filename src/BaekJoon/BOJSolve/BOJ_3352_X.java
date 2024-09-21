@@ -1,8 +1,8 @@
-package BaekJoon.Buffered;
+package BaekJoon.BOJSolve;
 
 import java.io.*;
 
-public class BOJ_3352_B_X {
+public class BOJ_3352_X {
   public static void main(String[] args) throws IOException {
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));

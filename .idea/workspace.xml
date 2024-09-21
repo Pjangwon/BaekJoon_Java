@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="66b7bb4f-c423-4854-a247-27a0ccac6833" name="Changes" comment="프로젝트 초기화">
-      <change afterPath="$PROJECT_DIR$/src/BaekJoon/Buffered/BOJ_5597_B.java" afterDir="false" />
+    <list default="true" id="66b7bb4f-c423-4854-a247-27a0ccac6833" name="Changes" comment="BOJ 1546 평균 조작 해결">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,6 +48,9 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.BOJ_10811_B.executor": "Run",
+    "Application.BOJ_1546_B.executor": "Run",
+    "Application.BOJ_3352_B.executor": "Run",
     "Application.BOJ_5597_B.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
@@ -60,7 +62,46 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.BOJ_1546_B">
+    <configuration name="BOJ_10811_B" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="BaekJoon.Buffered.BOJ_10811_B" />
+      <module name="Java2024" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="BaekJoon.Buffered.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BOJ_1546_B" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="BaekJoon.Buffered.BOJ_1546_B" />
+      <module name="Java2024" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="BaekJoon.Buffered.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BOJ_3352_B" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="BaekJoon.Buffered.BOJ_3352_B" />
+      <module name="Java2024" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="BaekJoon.Buffered.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BOJ_5597_B" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="BaekJoon.Buffered.BOJ_5597_B" />
       <module name="Java2024" />
@@ -76,6 +117,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BOJ_1546_B" />
+        <item itemvalue="Application.BOJ_10811_B" />
+        <item itemvalue="Application.BOJ_3352_B" />
         <item itemvalue="Application.BOJ_5597_B" />
       </list>
     </recent_temporary>
@@ -98,8 +142,58 @@
       <updated>1726729637402</updated>
       <workItem from="1726729638941" duration="67000" />
       <workItem from="1726732360704" duration="789000" />
-      <workItem from="1726744410776" duration="1277000" />
+      <workItem from="1726744410776" duration="10208000" />
+      <workItem from="1726813911145" duration="5034000" />
     </task>
+    <task id="LOCAL-00001" summary=".xml 파일 업로드">
+      <option name="closed" value="true" />
+      <created>1726745753373</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1726745753373</updated>
+    </task>
+    <task id="LOCAL-00002" summary="5597 과제 안내신 분? 문제 해결">
+      <option name="closed" value="true" />
+      <created>1726745865973</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1726745865973</updated>
+    </task>
+    <task id="LOCAL-00003" summary="3352 나머지 X 해결">
+      <option name="closed" value="true" />
+      <created>1726751700123</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1726751700123</updated>
+    </task>
+    <task id="LOCAL-00004" summary="BOJ 5597 이상없음">
+      <option name="closed" value="true" />
+      <created>1726751720379</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1726751720379</updated>
+    </task>
+    <task id="LOCAL-00005" summary="BOJ 10811 바구니 뒤짚기 해결">
+      <option name="closed" value="true" />
+      <created>1726754937366</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1726754937366</updated>
+    </task>
+    <task id="LOCAL-00006" summary="BOJ 1546 평균 조작 해결">
+      <option name="closed" value="true" />
+      <created>1726818967565</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1726818967565</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -127,5 +221,25 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value=".xml 파일 업로드" />
+    <MESSAGE value="5597 과제 안내신 분? 문제 해결" />
+    <MESSAGE value="3352 나머지 X 해결" />
+    <MESSAGE value="BOJ 5597 이상없음" />
+    <MESSAGE value="BOJ 10811 바구니 뒤짚기 해결" />
+    <MESSAGE value="BOJ 1546 평균 조작 해결" />
+    <option name="LAST_COMMIT_MESSAGE" value="BOJ 1546 평균 조작 해결" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/BaekJoon/Buffered/BOJ_10811_B.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
