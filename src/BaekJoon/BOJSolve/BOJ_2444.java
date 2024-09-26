@@ -10,34 +10,25 @@ public class BOJ_2444 {
 
     int N = Integer.parseInt(br.readLine());
 
-    for (int i = 0; i < N - 1; i++) {
-
-      for (int j = i; j < N - 1; j++) {
-        bw.write(" ");
+    for (int i = 1; i < N * 2; i++) {
+      if (i <= N) {
+        for (int j = i; j < N; j++) {
+          bw.write(" ");
+        }
+        for (int j = 1; j < i * 2; j++) {
+          bw.write("*");
+        }
+        bw.newLine();
+      } else {
+        for (int j = 0; j < i - N; j++) {
+          bw.write(" ");
+        }
+        for (int j = (i - N) * 2; j < N * 2 - 1  ; j++) {
+          bw.write("*");
+        }
+        bw.newLine();
       }
-
-      for (int j = 0; j < i * 2 + 1; j++) {
-        bw.write("*");
-      }
-      bw.write("\n");
     }
-
-    for (int i = 0; i < N*2-1; i++) {
-      bw.write("*");
-    }
-    bw.write("\n");
-
-    for (int i = N-1; i > 0; i--) {
-
-      for (int j = 0; j < N-i; j++) {
-        bw.write(" ");
-      }
-      for (int j = 0; j < i*2-1; j++) {
-        bw.write("*");
-      }
-      bw.write("\n");
-    }
-
     bw.flush();
   }
 }
