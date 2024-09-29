@@ -9,36 +9,16 @@ public class BOJ_2941 {
     BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
     String st = br.readLine();
-    int count = st.length();
 
-    for (int i = 1; i < st.length(); i++) {
-      if (st.charAt(i) == '=') {
-        if (st.charAt(i - 1) == 'z') {
-          if (st.charAt(i - 2) == 'd') {
-            count -= 2;
-          } else {
-            count--;
-          }
-        }
-        else if (st.charAt(i - 1) == 'c') {
-          count--;
-        }
-        else if (st.charAt(i - 1) == 's') {
-          count--;
-        }
+    String[] alpabet = {"c=", "c-", "dz=", "d-", "lj", "nj", "s=", "z="};
 
-
-      }
-      else if (st.charAt(i) == '-') {
-        count--;
-      }
-      else if (st.charAt(i) == 'j') {
-        if (st.charAt(i - 1) == 'l' || st.charAt(i - 1) == 'n') {
-          count--;
-        }
+    for (int i = 0; i < alpabet.length; i++) {
+      if (st.contains(alpabet[i])) {
+        st = st.replace(alpabet[i], "@");
       }
     }
-    bw.write(count + "\n");
+
+    bw.write(st.length() + "\n");
     bw.flush();
   }
 }
