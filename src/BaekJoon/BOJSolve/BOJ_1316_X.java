@@ -2,7 +2,7 @@ package BaekJoon.BOJSolve;
 
 import java.io.*;
 
-public class BOJ_1316 {
+public class BOJ_1316_X {
 
   static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
   static BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
