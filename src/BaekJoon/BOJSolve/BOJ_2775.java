@@ -9,10 +9,10 @@ public class BOJ_2775 {
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
-    int[][] arr = new int[15][15];
+    int[][] arr = new int[14][14];
 
-    for (int i = 1; i < 15; i++) {
-      arr[0][i] = i;
+    for (int i = 0; i < 14; i++) {
+      arr[0][i] = i + 1;
     }
 
     int T = Integer.parseInt(br.readLine());
@@ -28,20 +28,15 @@ public class BOJ_2775 {
 
   private static int function(int k, int n, int[][] arr) {
 
-    if (arr[k][n] != 0) {
-      return arr[k][n];
-    }
-
     if (k == 0) {
       return arr[0][n];
     }
 
     int result = 0;
-    for (int i = 1; i <= n; i++) {
-      result += function(k - 1, i, arr);
+    for (int i = 0; i < n; i++) {
+      result += arr[k - 1][i];
       arr[k][i] = result;
     }
-
     return result;
   }
 }
