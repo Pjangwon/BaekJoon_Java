@@ -11,8 +11,8 @@ public class BOJ_2775 {
 
     int[][] arr = new int[15][15];
 
-    for (int i = 0; i < 15; i++) {
-      arr[0][i] = i + 1;
+    for (int i = 1; i < 15; i++) {
+      arr[0][i] = i;
     }
 
     int T = Integer.parseInt(br.readLine());
@@ -37,10 +37,11 @@ public class BOJ_2775 {
     }
 
     int result = 0;
-    for (int i = 0; i < n; i++) {
-      result += arr[k - 1][i];
+    for (int i = 1; i <= n; i++) {
+      result += function(k - 1, i, arr);
       arr[k][i] = result;
     }
+
     return result;
   }
 }
