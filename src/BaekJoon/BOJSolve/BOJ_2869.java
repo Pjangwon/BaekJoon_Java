@@ -15,21 +15,9 @@ public class BOJ_2869 {
     long B = Long.parseLong(st.split(" ")[1]);
     long V = Long.parseLong(st.split(" ")[2]);
 
-    long isPosition = 0;
-    long count = 1;
+    long result = ((V - B) % (A - B) == 0) ? (V - B) / (A - B) : (V - B) / (A - B) + 1;
 
-    while (true) {
-      isPosition += A;
-
-      if (isPosition >= V) {
-        bw.write(count + "\n");
-        break;
-      }
-
-      count++;
-      isPosition -= B;
-    }
-
+    bw.write(result + "\n");
     bw.flush();
   }
 }
