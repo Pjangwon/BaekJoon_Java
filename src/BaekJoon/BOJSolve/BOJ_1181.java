@@ -1,6 +1,7 @@
 package BaekJoon.BOJSolve;
 
 import java.io.*;
+import java.util.Arrays;
 
 public class BOJ_1181 {
 
@@ -15,6 +16,8 @@ public class BOJ_1181 {
       words[i] = br.readLine();
     }
 
+    Arrays.sort(words);
+
     String tmp;
 
     for (int i = 0; i < words.length - 1; i++) {
@@ -27,18 +30,11 @@ public class BOJ_1181 {
       }
     }
 
-    for (int i = 0; i < words.length - 1; i++) {
-      for (int j = 0; j < words.length - 1 - i; j++) {
-        if (words[j].length() == words[j + 1].length() && words[j].compareTo(words[j + 1]) > 0) {
-          tmp = words[j];
-          words[j] = words[j + 1];
-          words[j + 1] = tmp;
-        }
+    bw.write(words[0] + "\n");
+    for (int i = 1; i < words.length; i++) {
+      if (!words[i].equals(words[i -1])) {
+        bw.write(words[i] + "\n");
       }
-    }
-
-    for (String word : words) {
-      bw.write(word + "\n");
     }
     bw.flush();
   }
