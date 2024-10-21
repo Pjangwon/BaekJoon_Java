@@ -1,6 +1,7 @@
 package BaekJoon.BOJSolve;
 
 import java.io.*;
+import java.util.*;
 
 public class BOJ_2751 {
 
@@ -11,16 +12,16 @@ public class BOJ_2751 {
 
     int n = Integer.parseInt(br.readLine());
 
-    boolean[] arr = new boolean[1000001];
+    ArrayList<Integer> list = new ArrayList<>();
 
     for (int i = 0; i < n; i++) {
-      arr[Integer.parseInt(br.readLine())] = true;
+      list.add(Integer.parseInt(br.readLine()));
     }
 
-    for (int i = 0; i < arr.length; i++) {
-      if (arr[i]) {
-        bw.write(i + "\n");
-      }
+    Collections.sort(list);
+
+    for (int num : list) {
+      bw.write(num + "\n");
     }
     bw.flush();
   }
